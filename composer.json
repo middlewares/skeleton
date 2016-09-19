@@ -1,7 +1,7 @@
 {
-    "name": "middlewares/[name]",
+    "name": "middlewares/boilerplate",
     "type": "library",
-    "description": "Middleware description",
+    "description": "Boilerplate to create PSR-15 middleware",
     "license": "MIT",
     "keywords": [
         "psr-7",
@@ -9,10 +9,9 @@
         "middleware",
         "http"
     ],
-    "homepage": "https://github.com/middlewares/[name]",
+    "homepage": "https://github.com/middlewares/boilerplate",
     "support": {
-        "email": "your@email.com",
-        "issues": "https://github.com/middlewares/[name]/issues"
+        "issues": "https://github.com/middlewares/boilerplate/issues"
     },
     "require": {
         "php": "^5.6 || ^7.0",
