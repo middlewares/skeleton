@@ -1,12 +1,15 @@
 > **NOTE:** This is a boilerplate to create middleware packages:
-
-> 1. Create a project with composer: `composer create-project middlewares/boilerplate my-middleware`
-> 2. Run `php my-middleware/install.php` to:
-
->   * replace *boilerplate* references to *my-middleware*
->   * rename the class `Boilerplate` to `MyMiddleware`
->   * remove this note in the `README.md`
->   * remove `install.php` itself
+>
+> ```sh
+> composer create-project --stability=dev middlewares/boilerplate my-middleware
+> ```
+>
+> What does this?
+>
+> 1. Create a new middleware package named `my-middleware` using composer
+> 2. Edit README.md, composer.json and other files to use `middlewares/my-middleware` as package name
+> 3. Rename the middleware class to `MyMiddleware`
+> 4. Remove this note in the `README.md`
 
 # middlewares/boilerplate
 

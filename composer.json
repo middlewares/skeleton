@@ -33,11 +33,8 @@
         }
     },
     "scripts": {
-        "test": [
-            "phpunit"
-        ],
-        "cs": [
-            "php-cs-fixer fix . --fixers=-psr0"
-        ]
+        "test": "phpunit",
+        "cs": "php-cs-fixer fix . --fixers=-psr0",
+        "post-create-project-cmd": "php install.php"
     }
 }
