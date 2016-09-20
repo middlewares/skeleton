@@ -2,14 +2,14 @@
 
 namespace Middlewares\Tests;
 
-use Middlewares\Middleware;
+use Middlewares\Boilerplate;
 use Zend\Diactoros\Request;
 
-class MiddlewareTest extends \PHPUnit_Framework_TestCase
+class BoilerplateTest extends \PHPUnit_Framework_TestCase
 {
-    public function testMiddleware()
+    public function testBoilerplate()
     {
-        $middleware = new Middleware();
+        $middleware = new Boilerplate();
         $response = $middleware->process(new Request(), new Delegate());
 
         $this->assertInstanceOf('Psr\\Http\\Message\\ResponseInterface', $response);
