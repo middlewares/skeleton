@@ -1,12 +1,12 @@
 > **NOTE:** This is a boilerplate to create middleware packages:
 
 > 1. Create a project with composer: `composer create-project middlewares/boilerplate my-middleware`
-> 2. Run `php my-middleware/fill.php` to:
+> 2. Run `php my-middleware/install.php` to:
 
 >   * replace *boilerplate* references to *my-middleware*
 >   * rename the class `Boilerplate` to `MyMiddleware`
 >   * remove this note in the `README.md`
->   * remove `fill.php` itself
+>   * remove `install.php` itself
 
 # middlewares/boilerplate
 
