@@ -35,7 +35,7 @@ Please try to be as detailed as possible in your report. Include specific inform
 
 Good pull requests – patches, improvements, new features – are a fantastic help. Before create a pull request, please follow these instructions:
 
-* The code must follow the [PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md). Run `composer cs` to fix the code
+* The code must follow the [PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md). Run `composer cs-fix` to fix the code
 * Write tests
 * Document any change in `README.md` and `CHANGELOG.md`
 * One pull request per feature. If you want to do more than one thing, send multiple pull request
