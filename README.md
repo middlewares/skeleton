@@ -3,6 +3,11 @@
 > ```sh
 > composer create-project --stability=dev middlewares/boilerplate my-middleware
 > ```
+> Or to create a `ServerMiddlewareInterface`
+>
+> ```sh
+> composer create-project --stability=dev middlewares/boilerplate my-middleware dev-server
+> ```
 >
 > What does this?
 >
