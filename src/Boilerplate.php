@@ -13,12 +13,12 @@ class Boilerplate implements MiddlewareInterface
      * Process a client request and return a response.
      *
      * @param RequestInterface  $request
-     * @param DelegateInterface $frame
+     * @param DelegateInterface $delegate
      *
      * @return ResponseInterface
      */
-    public function process(RequestInterface $request, DelegateInterface $frame)
+    public function process(RequestInterface $request, DelegateInterface $delegate)
     {
-        return $frame->next($request);
+        return $delegate->next($request);
     }
 }
