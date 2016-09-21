@@ -2,23 +2,23 @@
 
 namespace Middlewares;
 
-use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use Interop\Http\Middleware\MiddlewareInterface;
+use Interop\Http\Middleware\ServerMiddlewareInterface;
 use Interop\Http\Middleware\DelegateInterface;
 
-class Boilerplate implements MiddlewareInterface
+class Boilerplate implements ServerMiddlewareInterface
 {
     /**
-     * Process a client request and return a response.
+     * Process a server request and return a response.
      *
-     * @param RequestInterface  $request
-     * @param DelegateInterface $frame
+     * @param ServerRequestInterface $request
+     * @param DelegateInterface      $delegate
      *
      * @return ResponseInterface
      */
-    public function process(RequestInterface $request, DelegateInterface $frame)
+    public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
-        return $frame->next($request);
+        return $delegate->next($request);
     }
 }
