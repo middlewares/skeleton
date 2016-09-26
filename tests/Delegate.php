@@ -15,7 +15,7 @@ class Delegate implements DelegateInterface
      *
      * @return ResponseInterface
      */
-    public function next(RequestInterface $request)
+    public function process(RequestInterface $request)
     {
         return new Response();
     }

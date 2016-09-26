@@ -19,6 +19,6 @@ class Boilerplate implements MiddlewareInterface
      */
     public function process(RequestInterface $request, DelegateInterface $delegate)
     {
-        return $delegate->next($request);
+        return $delegate->process($request);
     }
 }
