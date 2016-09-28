@@ -26,7 +26,7 @@ $file = fopen(__DIR__.'/README.md', 'r');
 $note = true;
 $content = '';
 
-while (($line = fgets($file)) != false) {
+while (($line = fgets($file)) !== false) {
     if ($note && (!trim($line) || $line[0] === '>')) {
         continue;
     }
