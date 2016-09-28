@@ -27,6 +27,8 @@
 
 Description of the middleware
 
+**Note:** This middleware is intended for server side only
+
 ## Requirements
 
 * PHP >= 5.6
