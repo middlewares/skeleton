@@ -13,29 +13,21 @@ foreach ([
     $content = file_get_contents(__DIR__.$file);
     $content = str_replace('boilerplate', $package_name, $content);
     $content = str_replace('Boilerplate', $class_name, $content);
+
+    //Remove the note in README.md
+    if ($file === '/README.md') {
+        $content = explode('---', $content, 2);
+        $content = $content[1];
+    }
+
     file_put_contents(__DIR__.$file, $content);
 
+    //Rename Boilerplate classes
     if (strpos($file, 'Boilerplate') !== false) {
         $newFile = str_replace('Boilerplate', $class_name, $file);
         rename(__DIR__.$file, __DIR__.$newFile);
     }
 }
-
-//Remove the note in README.md
-$file = fopen(__DIR__.'/README.md', 'r');
-$note = true;
-$content = '';
-
-while (($line = fgets($file)) !== false) {
-    if ($note && (!trim($line) || $line[0] === '>')) {
-        continue;
-    }
-
-    $note = false;
-    $content .= $line;
-}
-
-file_put_contents(__DIR__.'/README.md', $content);
 
 //Remove the post-create-project-cmd composer script
 $composer = json_decode(file_get_contents(__DIR__.'/composer.json'), true);
