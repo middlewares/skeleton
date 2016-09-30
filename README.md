@@ -1,20 +1,23 @@
-> **NOTE:** This is a boilerplate to create middleware packages:
->
-> ```sh
-> composer create-project --stability=dev middlewares/boilerplate my-middleware
-> ```
-> Or to create a `ServerMiddlewareInterface`
->
-> ```sh
-> composer create-project --stability=dev middlewares/boilerplate my-middleware dev-server
-> ```
->
-> What does this?
->
-> 1. Create a new middleware package named `my-middleware` using composer
-> 2. Edit README.md, composer.json and other files to use `middlewares/my-middleware` as package name
-> 3. Rename the middleware class to `MyMiddleware`
-> 4. Remove this note in the `README.md`
+This is a skeleton to create packages implementing [PSR-15](https://github.com/http-interop/http-middleware) using composer:
+
+```sh
+composer create-project --stability=dev middlewares/boilerplate my-middleware
+```
+
+If you want to create a `ServerMiddlewareInterface`, use the `dev-server` version:
+
+```sh
+composer create-project --stability=dev middlewares/boilerplate my-middleware dev-server
+```
+
+What does this?
+
+1. Create a new middleware package named `my-middleware`
+2. Edit README.md, composer.json and other files to use `middlewares/my-middleware` as package name
+3. Rename the middleware class to `MyMiddleware`
+4. Remove this note in the `README.md`
+
+---
 
 # middlewares/boilerplate
 
