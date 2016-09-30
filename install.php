@@ -17,7 +17,7 @@ foreach ([
     //Remove the note in README.md
     if ($file === '/README.md') {
         $content = explode('---', $content, 2);
-        $content = $content[1];
+        $content = ltrim($content[1]);
     }
 
     file_put_contents(__DIR__.$file, $content);
