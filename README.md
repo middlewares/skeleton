@@ -63,21 +63,9 @@ Option description
 
 Option description
 
-## Change log
+---
 
-Please see [CHANGELOG](CHANGELOG.md) for more information about recent changes.
-
-## Testing
-
-```sh
-composer test
-```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## License
+Please see [CHANGELOG](CHANGELOG.md) for more information about recent changes and [CONTRIBUTING](CONTRIBUTING.md) for contributing details.
 
 The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
 
