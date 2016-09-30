@@ -50,7 +50,7 @@ $dispatcher = new Dispatcher([
 		->option2($value)
 ]);
 
-$response = $dispatcher->dispatch(new Request());
+$response = $dispatcher->dispatch(new ServerRequest());
 ```
 
 ## Options
