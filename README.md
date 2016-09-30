@@ -10,12 +10,7 @@ If you want to create a `ServerMiddlewareInterface`, use the `dev-server` versio
 composer create-project --stability=dev middlewares/boilerplate my-middleware dev-server
 ```
 
-What does this?
-
-1. Create a new middleware package named `my-middleware`
-2. Edit README.md, composer.json and other files to use `middlewares/my-middleware` as package name
-3. Rename the middleware class to `MyMiddleware`
-4. Remove this note in the `README.md`
+Note: After creating the project, Composer will ask to remove the existing VCS history (the .git directory). You should type `y` (it's the default option, anyway).
 
 ---
 
