@@ -14,10 +14,13 @@ foreach ([
     $content = str_replace('boilerplate', $package_name, $content);
     $content = str_replace('Boilerplate', $class_name, $content);
 
-    //Remove the note in README.md
     if ($file === '/README.md') {
+        //Remove the note in README.md
         $content = explode('---', $content, 2);
         $content = ltrim($content[1]);
+
+        //Remove the SensioLabs Insight project id
+        $content = str_replace('36786f5a-2a15-4399-8817-8f24fcd8c0b4', '{project_id_here}', $content);
     }
 
     file_put_contents(__DIR__.$file, $content);
