@@ -7,7 +7,7 @@ use Psr\Http\Message\ResponseInterface;
 use Interop\Http\Middleware\MiddlewareInterface;
 use Interop\Http\Middleware\DelegateInterface;
 
-class Boilerplate implements MiddlewareInterface
+class Skeleton implements MiddlewareInterface
 {
     /**
      * Process a request and return a response.

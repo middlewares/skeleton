@@ -7,12 +7,12 @@ $class_name = str_replace('-', '', ucwords($package_name, '-'));
 foreach ([
     '/composer.json',
     '/README.md',
-    '/src/Boilerplate.php',
-    '/tests/BoilerplateTest.php',
+    '/src/Skeleton.php',
+    '/tests/SkeletonTest.php',
 ] as $file) {
     $content = file_get_contents(__DIR__.$file);
-    $content = str_replace('boilerplate', $package_name, $content);
-    $content = str_replace('Boilerplate', $class_name, $content);
+    $content = str_replace('skeleton', $package_name, $content);
+    $content = str_replace('Skeleton', $class_name, $content);
 
     if ($file === '/README.md') {
         //Remove the note in README.md
@@ -25,9 +25,9 @@ foreach ([
 
     file_put_contents(__DIR__.$file, $content);
 
-    //Rename Boilerplate classes
-    if (strpos($file, 'Boilerplate') !== false) {
-        $newFile = str_replace('Boilerplate', $class_name, $file);
+    //Rename Skeleton classes
+    if (strpos($file, 'Skeleton') !== false) {
+        $newFile = str_replace('Skeleton', $class_name, $file);
         rename(__DIR__.$file, __DIR__.$newFile);
     }
 }

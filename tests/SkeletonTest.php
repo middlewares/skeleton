@@ -2,17 +2,17 @@
 
 namespace Middlewares\Tests;
 
-use Middlewares\Boilerplate;
+use Middlewares\Skeleton;
 use Zend\Diactoros\Request;
 use Zend\Diactoros\Response;
 use mindplay\middleman\Dispatcher;
 
-class BoilerplateTest extends \PHPUnit_Framework_TestCase
+class SkeletonTest extends \PHPUnit_Framework_TestCase
 {
-    public function testBoilerplate()
+    public function testSkeleton()
     {
         $response = (new Dispatcher([
-            new Boilerplate(),
+            new Skeleton(),
             function () {
                 return new Response();
             },

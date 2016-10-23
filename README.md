@@ -1,20 +1,20 @@
 This is a skeleton to create packages implementing [PSR-15](https://github.com/http-interop/http-middleware) using composer:
 
 ```sh
-composer create-project --stability=dev middlewares/boilerplate my-middleware
+composer create-project --stability=dev middlewares/skeleton my-middleware
 ```
 
 If you want to create a `ServerMiddlewareInterface`, use the `dev-server` version:
 
 ```sh
-composer create-project --stability=dev middlewares/boilerplate my-middleware dev-server
+composer create-project --stability=dev middlewares/skeleton my-middleware dev-server
 ```
 
 Note: After creating the project, Composer will ask to remove the existing VCS history (the .git directory). You should type `y` (it's the default option, anyway).
 
 ---
 
-# middlewares/boilerplate
+# middlewares/skeleton
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -33,17 +33,17 @@ Description of the middleware
 
 ## Installation
 
-This package is installable and autoloadable via Composer as [middlewares/boilerplate](https://packagist.org/packages/middlewares/boilerplate).
+This package is installable and autoloadable via Composer as [middlewares/skeleton](https://packagist.org/packages/middlewares/skeleton).
 
 ```sh
-composer require middlewares/boilerplate
+composer require middlewares/skeleton
 ```
 
 ## Example
 
 ```php
 $dispatcher = new Dispatcher([
-	(new Middlewares\Boilerplate())
+	(new Middlewares\Skeleton())
 		->option1()
 		->option2($value)
 ]);
@@ -67,15 +67,15 @@ Please see [CHANGELOG](CHANGELOG.md) for more information about recent changes a
 
 The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/middlewares/boilerplate.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/middlewares/skeleton.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/middlewares/boilerplate/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/g/middlewares/boilerplate.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/middlewares/boilerplate.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/middlewares/skeleton/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/g/middlewares/skeleton.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/middlewares/skeleton.svg?style=flat-square
 [ico-sensiolabs]: https://img.shields.io/sensiolabs/i/36786f5a-2a15-4399-8817-8f24fcd8c0b4.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/middlewares/boilerplate
-[link-travis]: https://travis-ci.org/middlewares/boilerplate
-[link-scrutinizer]: https://scrutinizer-ci.com/g/middlewares/boilerplate
-[link-downloads]: https://packagist.org/packages/middlewares/boilerplate
+[link-packagist]: https://packagist.org/packages/middlewares/skeleton
+[link-travis]: https://travis-ci.org/middlewares/skeleton
+[link-scrutinizer]: https://scrutinizer-ci.com/g/middlewares/skeleton
+[link-downloads]: https://packagist.org/packages/middlewares/skeleton
 [link-sensiolabs]: https://insight.sensiolabs.com/projects/36786f5a-2a15-4399-8817-8f24fcd8c0b4
