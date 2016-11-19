@@ -4,12 +4,6 @@ This is a skeleton to create packages implementing [PSR-15](https://github.com/h
 composer create-project --stability=dev middlewares/skeleton my-middleware
 ```
 
-If you want to create a `ServerMiddlewareInterface`, use the `dev-server` version:
-
-```sh
-composer create-project --stability=dev middlewares/skeleton my-middleware dev-server
-```
-
 Note: After creating the project, Composer will ask to remove the existing VCS history (the .git directory). You should type `y` (it's the default option, anyway).
 
 ---
@@ -48,7 +42,7 @@ $dispatcher = new Dispatcher([
 		->option2($value)
 ]);
 
-$response = $dispatcher->dispatch(new Request());
+$response = $dispatcher->dispatch(new ServerRequest());
 ```
 
 ## Options

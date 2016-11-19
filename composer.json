@@ -7,6 +7,7 @@
         "psr-7",
         "psr-15",
         "middleware",
+        "server",
         "http"
     ],
     "homepage": "https://github.com/middlewares/skeleton",
