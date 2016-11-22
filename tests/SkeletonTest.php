@@ -3,9 +3,10 @@
 namespace Middlewares\Tests;
 
 use Middlewares\Skeleton;
+use Middlewares\Utils\Dispatcher;
+use Middlewares\Utils\CallableMiddleware;
 use Zend\Diactoros\ServerRequest;
 use Zend\Diactoros\Response;
-use mindplay\middleman\Dispatcher;
 
 class SkeletonTest extends \PHPUnit_Framework_TestCase
 {
@@ -14,9 +15,9 @@ class SkeletonTest extends \PHPUnit_Framework_TestCase
         $request = new ServerRequest();
         $response = (new Dispatcher([
             new Skeleton(),
-            function () {
+            new CallableMiddleware(function () {
                 return new Response();
-            },
+            }),
         ]))->dispatch($request);
 
         $this->assertInstanceOf('Psr\\Http\\Message\\ResponseInterface', $response);
