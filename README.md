@@ -11,7 +11,7 @@ Note: After creating the project, Composer will ask to remove the existing VCS h
 # middlewares/skeleton
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
+[![Software License][ico-license]](LICENSE)
 [![Build Status][ico-travis]][link-travis]
 [![Quality Score][ico-scrutinizer]][link-scrutinizer]
 [![Total Downloads][ico-downloads]][link-downloads]
