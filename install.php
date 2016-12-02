@@ -32,6 +32,10 @@ foreach ([
     }
 }
 
+//Supersede .gitattributes
+unlink('.gitattributes');
+rename('.gitattributes.skeleton', '.gitattributes');
+
 //Remove the post-create-project-cmd composer script
 $composer = json_decode(file_get_contents(__DIR__.'/composer.json'), true);
 unset($composer['scripts']['post-create-project-cmd']);

@@ -1,10 +1,8 @@
 This is a skeleton to create packages implementing [PSR-15](https://github.com/http-interop/http-middleware) using composer:
 
 ```sh
-composer create-project --stability=dev middlewares/skeleton my-middleware
+composer create-project middlewares/skeleton my-middleware
 ```
-
-Note: After creating the project, Composer will ask to remove the existing VCS history (the .git directory). You should type `y` (it's the default option, anyway).
 
 ---
 
