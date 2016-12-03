@@ -4,6 +4,7 @@
     "description": "A skeleton repository for PSR-15 middleware packages",
     "license": "MIT",
     "keywords": [
+        "template",
         "psr-7",
         "psr-15",
         "middleware",

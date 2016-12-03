@@ -36,9 +36,15 @@ foreach ([
 unlink('.gitattributes');
 rename('.gitattributes.skeleton', '.gitattributes');
 
-//Remove the post-create-project-cmd composer script
+
 $composer = json_decode(file_get_contents(__DIR__.'/composer.json'), true);
+
+//Remove the "post-create-project-cmd" composer script
 unset($composer['scripts']['post-create-project-cmd']);
+
+//Remove the "template" keyword
+array_shift($composer['keywords']);
+
 file_put_contents(__DIR__.'/composer.json', json_encode($composer, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
 //Remove myself
