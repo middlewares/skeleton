@@ -36,7 +36,6 @@ foreach ([
 unlink('.gitattributes');
 rename('.gitattributes.skeleton', '.gitattributes');
 
-
 $composer = json_decode(file_get_contents(__DIR__.'/composer.json'), true);
 
 //Remove the "post-create-project-cmd" composer script
