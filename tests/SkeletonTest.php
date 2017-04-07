@@ -15,7 +15,5 @@ class SkeletonTest extends \PHPUnit_Framework_TestCase
         $response = Dispatcher::run([
             new Skeleton(),
         ], $request);
-
-        $this->assertInstanceOf('Psr\\Http\\Message\\ResponseInterface', $response);
     }
 }
