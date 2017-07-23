@@ -9,6 +9,7 @@ foreach ([
     '/README.md',
     '/src/Skeleton.php',
     '/tests/SkeletonTest.php',
+    '/phpunit.xml.dist',
 ] as $file) {
     $content = file_get_contents(__DIR__.$file);
     $content = str_replace('skeleton', $package_name, $content);

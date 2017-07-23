@@ -16,5 +16,7 @@ class SkeletonTest extends TestCase
         $response = Dispatcher::run([
             new Skeleton(),
         ], $request);
+
+        $this->assertSame(200, $response->getStatusCode());
     }
 }
