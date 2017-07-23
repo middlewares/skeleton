@@ -2,11 +2,12 @@
 
 namespace Middlewares\Tests;
 
+use PHPUnit\Framework\TestCase;
 use Middlewares\Skeleton;
 use Middlewares\Utils\Dispatcher;
 use Middlewares\Utils\Factory;
 
-class SkeletonTest extends \PHPUnit_Framework_TestCase
+class SkeletonTest extends TestCase
 {
     public function testSkeleton()
     {
