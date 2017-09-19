@@ -28,7 +28,7 @@ Description of the middleware
 This package is installable and autoloadable via Composer as [middlewares/skeleton](https://packagist.org/packages/middlewares/skeleton).
 
 ```sh
-composer require middlewares/skeleton
+composer create-project middlewares/skeleton ./my-new-middleware
 ```
 
 ## Example
