@@ -1,4 +1,4 @@
-This is a skeleton to create packages implementing [PSR-15](https://github.com/http-interop/http-middleware) using composer:
+This is a skeleton to create packages implementing [PSR-15](https://github.com/http-interop/http-server-middleware) using composer:
 
 ```sh
 composer create-project middlewares/skeleton my-middleware
@@ -19,7 +19,7 @@ Description of the middleware
 
 ## Requirements
 
-* PHP >= 5.6
+* PHP >= 7.0
 * A [PSR-7](https://packagist.org/providers/psr/http-message-implementation) http mesage implementation ([Diactoros](https://github.com/zendframework/zend-diactoros), [Guzzle](https://github.com/guzzle/psr7), [Slim](https://github.com/slimphp/Slim), etc...)
 * A [PSR-15 middleware dispatcher](https://github.com/middlewares/awesome-psr15-middlewares#dispatcher)
 
