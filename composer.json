@@ -38,10 +38,11 @@
     },
     "scripts": {
         "test": [
-            "phpunit",
+            "phpunit --coverage-text",
             "phpcs"
         ],
         "cs-fix": "php-cs-fixer fix .",
+        "coverage": "phpunit --coverage-html=coverage",
         "post-create-project-cmd": "php install.php"
     }
 }
