@@ -35,9 +35,9 @@ composer require middlewares/skeleton
 
 ```php
 $dispatcher = new Dispatcher([
-	(new Middlewares\Skeleton())
-		->option1()
-		->option2($value)
+    (new Middlewares\Skeleton())
+        ->option1()
+        ->option2($value)
 ]);
 
 $response = $dispatcher->dispatch(new ServerRequest());
