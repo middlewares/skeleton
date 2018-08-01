@@ -11,7 +11,7 @@ class SkeletonTest extends TestCase
 {
     public function testSkeleton()
     {
-        $request = Factory::createServerRequest();
+        $request = Factory::createServerRequest('GET', '/');
 
         $response = Dispatcher::run([
             new Skeleton(),
