@@ -42,6 +42,7 @@
         "cs-fix": "php-cs-fixer fix",
         "test": "phpunit",
         "coverage": "phpunit --coverage-text",
-        "coverage-html": "phpunit --coverage-html=coverage"
+        "coverage-html": "phpunit --coverage-html=coverage",
+        "post-create-project-cmd": "php install.php"
     }
 }
