@@ -10,8 +10,7 @@ composer create-project middlewares/skeleton my-middleware
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE)
-[![Build Status][ico-travis]][link-travis]
-[![Quality Score][ico-scrutinizer]][link-scrutinizer]
+![Testing][ico-ga]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 Description of the middleware
@@ -60,11 +59,8 @@ The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/middlewares/skeleton.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/middlewares/skeleton/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/g/middlewares/skeleton.svg?style=flat-square
+[ico-ga]: https://github.com/middlewares/minifier/workflows/testing/badge.svg
 [ico-downloads]: https://img.shields.io/packagist/dt/middlewares/skeleton.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/middlewares/skeleton
-[link-travis]: https://travis-ci.org/middlewares/skeleton
-[link-scrutinizer]: https://scrutinizer-ci.com/g/middlewares/skeleton
 [link-downloads]: https://packagist.org/packages/middlewares/skeleton
