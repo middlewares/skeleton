@@ -46,7 +46,7 @@ Good pull requests – patches, improvements, new features – are a fantastic h
 composer test
 ```
 
-To get code coverage information execute the following comand:
+To get code coverage information execute the following command:
 
 ```sh
 composer coverage
