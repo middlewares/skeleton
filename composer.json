@@ -12,6 +12,7 @@
         "http"
     ],
     "homepage": "https://github.com/middlewares/skeleton",
+    "readme": "README.md",
     "support": {
         "issues": "https://github.com/middlewares/skeleton/issues"
     },
