@@ -40,7 +40,7 @@ Good pull requests – patches, improvements, new features – are a fantastic h
 * Document any change in `README.md` and `CHANGELOG.md`
 * One pull request per feature. If you want to do more than one thing, send multiple pull request
 
-### Runing tests
+### Running tests
 
 ```sh
 composer test
