@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Middlewares\Tests;
 
 use Middlewares\Skeleton;
@@ -9,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 
 class SkeletonTest extends TestCase
 {
-    public function testSkeleton()
+    public function testSkeleton(): void
     {
         $request = Factory::createServerRequest('GET', '/');
 
